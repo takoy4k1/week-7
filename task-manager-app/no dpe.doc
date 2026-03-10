@@ -1,0 +1,47 @@
+npm create vite@latest
+jsx converts to javasdcript d
+ let username="matt"
+  let person={
+   pid:101,
+   age:21
+
+  };
+  let marks=[90,70,67];
+  const test1=()=>{
+    console.log("test called")
+  }
+  const test2=()=>[
+    console.log("test2 called")
+
+  ]
+h2>{username}</h2>
+     <h2>{person.pid}</h2>
+     <h2>{person.age}</h2>
+
+     {
+      marks.map((m,index)=><h2 key={index}>{m}</h2>)
+     }
+     <button onClick={test1} className="bg-amber-300 text-lime-200 p-3">click</button>
+     <button onClick={()=>test2(100)}>click</button>
+
+
+
+     1.update amrks state by inserting the elemenst beginning at endn=ing and in between with index
+     2.delete marks from the end of the array
+    
+
+    SIDE EFFECTS
+    A COMPOTNENET CAN RENDER INITIALLY BEFORE DISPALYONG CONTENT
+    IF THE COMPONENT IS ABOUT TO MAKE AN API REQUEST , OT SHOUDL WAIT UNTIL THE INITIAL RENDERING OS COMPLETED
+    if both initoial rendering and api request happen togethr, it leads to unexpected bugs in the application
+   
+   no dependancy arrayythen it runs after every rendering
+
+   useEffect(()=>{side effect})
+   empty array runs once on mount
+
+
+with dpependencies- runs whn depependencies chnage
+
+   useEffect(()=>{side effect}),depependencies
+
